@@ -22,9 +22,12 @@ Let's begin by setting up a couple of environment variables. These will be varia
   - We'll also need a function to handle the randomizing of the color, positioning, and size of our dots.
     - Add this code beneath the `drawId` variable created above.
       ```js
-      function getRandomNumber(min, max) {
-        return Math.round(Math.random() * (max - min + 1)) + min;
-      };
+        let mousePosition = {x: 0, y: 0}
+        let drawId
+        
+        function getRandomNumber(min, max) {
+          return Math.round(Math.random() * (max - min + 1)) + min;
+        };
       ```
     - This function will take in a min and a max number, and return a random number between those two.
 
